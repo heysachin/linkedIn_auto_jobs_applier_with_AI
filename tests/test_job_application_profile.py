@@ -30,7 +30,7 @@ def valid_yaml():
     availability:
       notice_period: "2 weeks"
     salary_expectations:
-      salary_range_usd: "80000-120000"
+      salary_range_inr: "80000-120000"
     """
 
 @pytest.fixture
@@ -56,7 +56,7 @@ def missing_field_yaml():
     availability:
       notice_period: "2 weeks"
     salary_expectations:
-      salary_range_usd: "80000-120000"
+      salary_range_inr: "80000-120000"
     """
 
 @pytest.fixture
@@ -88,7 +88,7 @@ def invalid_type_yaml():
     availability:
       notice_period: "2 weeks"
     salary_expectations:
-      salary_range_usd: "80000-120000"
+      salary_range_inr: "80000-120000"
     """
 
 def test_initialize_with_valid_yaml(valid_yaml):
@@ -101,7 +101,7 @@ def test_initialize_with_valid_yaml(valid_yaml):
     assert profile.legal_authorization.eu_work_authorization == "Yes"
     assert profile.work_preferences.remote_work == "Yes"
     assert profile.availability.notice_period == "2 weeks"
-    assert profile.salary_expectations.salary_range_usd == "80000-120000"
+    assert profile.salary_expectations.salary_range_inr == "80000-120000"
 
 def test_initialize_with_missing_field(missing_field_yaml):
     """Test initializing JobApplicationProfile with missing required fields."""
@@ -133,7 +133,7 @@ def test_initialize_with_invalid_yaml():
     availability:
       notice_period: "2 weeks"
     salary_expectations:
-      salary_range_usd: "80000-120000"
+      salary_range_inr: "80000-120000"
     """  # Missing fields in work_preferences
 
     with pytest.raises(TypeError):

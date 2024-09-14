@@ -101,8 +101,7 @@ availability:
   notice_period: "2 weeks"
 
 salary_expectations:
-  salary_range_usd: "90000 - 110000"
-
+  salary_range_inr: "6000000 - 7000000"
 self_identification:
   gender: "Female"
   pronouns: "She/Her"

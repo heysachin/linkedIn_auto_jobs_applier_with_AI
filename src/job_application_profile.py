@@ -43,7 +43,7 @@ class Availability:
 
 @dataclass
 class SalaryExpectations:
-    salary_range_usd: str
+    salary_range_inr: str
 
 
 @dataclass
@@ -172,6 +172,6 @@ class JobApplicationProfile:
                          f"Legal Authorization:\n{format_dataclass(self.legal_authorization)}\n\n"
                          f"Work Preferences:\n{format_dataclass(self.work_preferences)}\n\n"
                          f"Availability: {self.availability.notice_period}\n\n"
-                         f"Salary Expectations: {self.salary_expectations.salary_range_usd}\n\n")
+                         f"Salary Expectations: {self.salary_expectations.salary_range_inr}\n\n")
         logger.debug(f"String representation generated: {formatted_str}")
         return formatted_str

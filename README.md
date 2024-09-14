@@ -415,12 +415,12 @@ Each section has specific fields to fill out:
 
 - `salary_expectations:`
   - Provide your expected salary range.
-    - **salary_range_usd**: The salary range you are expecting, expressed in USD.
+    - **salary_range_inr**: The salary range you are expecting, expressed in INR.
 
   - Example:
   ```yaml
   salary_expectations:
-    salary_range_usd: "80000 - 100000"
+    salary_range_inr: "3500000 - 4000000"
   ```
 
 - `self_identification:`

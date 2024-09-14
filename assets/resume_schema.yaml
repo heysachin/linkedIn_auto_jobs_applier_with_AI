@@ -94,8 +94,8 @@ availability:
 salary_expectations:
   type: object
   properties:
-    salary_range_usd: {type: string}
-  required: [salary_range_usd]
+    salary_range_inr: {type: string}
+  required: [salary_range_inr]
 
 self_identification:
   type: object
